@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROSE $ ROLLE - Testimonials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="https://media.istockphoto.com/id/1079053776/vector/second-hand-fashion-symbol-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=HW7CxglpPTtdzOqiQXxVxoep2PFtwX2KSWi_u3r3O3Y=" alt="ROSE $ ROLLE Logo">
+      </div>
+      <h1>ROSE $ ROLLE</h1>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Customer Testimonials</h2>
+      <section id="add-testimonial">
+        <h3>Leave a Testimonial</h3>
+        <form id="testimonial-form" class="form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <small>Your email will not be displayed to the public</small>
+          </div>
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="rating">Rating:</label>
+            <select id="rating" required>
+              <option value="5">5 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="2">2 Stars</option>
+              <option value="1">1 Star</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Submit Testimonial</button>
+        </form>
+      </section>
+      <section id="testimonials-list">
+        <h3>What Our Customers Say</h3>
+        <div id="testimonials"></div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 ROSE $ ROLLE. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

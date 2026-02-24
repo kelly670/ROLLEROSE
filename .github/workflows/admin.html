@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROSE $ ROLLE - Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="https://media.istockphoto.com/id/1079053776/vector/second-hand-fashion-symbol-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=HW7CxglpPTtdzOqiQXxVxoep2PFtwX2KSWi_u3r3O3Y=" alt="ROSE $ ROLLE Logo">
+      </div>
+      <h1>Admin Dashboard</h1>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div id="login-section">
+        <h2>Admin Login</h2>
+        <form id="login-form" class="form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+        <p id="login-message"></p>
+      </div>
+      <div id="dashboard-section">
+        <div class="admin-header">
+          <button id="logout-btn" class="btn">Logout</button>
+        </div>
+        
+        <nav class="admin-nav">
+          <button class="admin-nav-btn active" data-page="items">Items</button>
+          <button class="admin-nav-btn" data-page="messages">Messages</button>
+        </nav>
+
+        <!-- Items Page -->
+        <div id="items-page" class="admin-page active">
+          <section>
+            <h2>Add New Item</h2>
+            <form id="add-item-form" class="form" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Item name" required>
+              </div>
+              <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" required>
+                  <!-- Options will be loaded -->
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" placeholder="Price in KES" step="0.01" required>
+              </div>
+              <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" placeholder="Item description"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="image">Image:</label>
+                <input type="file" id="image" accept="image/*">
+              </div>
+              <button type="submit" class="btn">Add Item</button>
+            </form>
+          </section>
+          <section>
+            <h2>All Items</h2>
+            <div id="all-items" class="items-grid"></div>
+          </section>
+        </div>
+
+        <!-- Messages Page -->
+        <div id="messages-page" class="admin-page">
+          <section>
+            <h2>All Messages</h2>
+            <div id="messages-list" class="messages-list"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 ROSE $ ROLLE. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
